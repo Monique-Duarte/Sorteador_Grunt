@@ -15,13 +15,17 @@
 <body>
     <main>
         <h1>Sorteador</h1>
-        <form>
+        <form id="form-sorteador">
             <div>
-                <label for="num-max">Número máximo</label>
-                <input type="number" id="num-max">
+                <label for="numero-maximo">Número máximo</label>
+                <input type="number" id="numero-maximo" required step="1" min ="1">
             </div> 
             <button type="submit">Sortear número</button>
         </form>
+        <div class="resultado">
+            <span id="resultado-valor"> </span>
+        </div>
     </main>
+    <script src="../src/scripts/main.js"></script>
 </body>
 </html>
